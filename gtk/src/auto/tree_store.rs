@@ -55,7 +55,7 @@ pub trait TreeStoreExt: 'static {
     //fn insert_with_values(&self, parent: Option<&TreeIter>, position: i32, : /*Unknown conversion*//*Unimplemented*/Fundamental: VarArgs) -> TreeIter;
 
     //#[doc(alias = "gtk_tree_store_insert_with_valuesv")]
-    //fn insert_with_valuesv(&self, parent: Option<&TreeIter>, position: i32, columns: &[i32], values: &[&glib::Value]) -> TreeIter;
+    //fn insert_with_valuesv(&self, parent: Option<&TreeIter>, position: i32, columns: &[i32], values: &[glib::Value]) -> TreeIter;
 
     #[doc(alias = "gtk_tree_store_is_ancestor")]
     fn is_ancestor(&self, iter: &TreeIter, descendant: &TreeIter) -> bool;
@@ -85,7 +85,7 @@ pub trait TreeStoreExt: 'static {
     //fn set_valist(&self, iter: &TreeIter, var_args: /*Unknown conversion*//*Unimplemented*/Unsupported);
 
     //#[doc(alias = "gtk_tree_store_set_valuesv")]
-    //fn set_valuesv(&self, iter: &TreeIter, columns: &[i32], values: &[&glib::Value]);
+    //fn set_valuesv(&self, iter: &TreeIter, columns: &[i32], values: &[glib::Value]);
 
     #[doc(alias = "gtk_tree_store_swap")]
     fn swap(&self, a: &TreeIter, b: &TreeIter);
@@ -153,7 +153,7 @@ impl<O: IsA<TreeStore>> TreeStoreExt for O {
     //    unsafe { TODO: call ffi:gtk_tree_store_insert_with_values() }
     //}
 
-    //fn insert_with_valuesv(&self, parent: Option<&TreeIter>, position: i32, columns: &[i32], values: &[&glib::Value]) -> TreeIter {
+    //fn insert_with_valuesv(&self, parent: Option<&TreeIter>, position: i32, columns: &[i32], values: &[glib::Value]) -> TreeIter {
     //    unsafe { TODO: call ffi:gtk_tree_store_insert_with_valuesv() }
     //}
 
@@ -234,7 +234,7 @@ impl<O: IsA<TreeStore>> TreeStoreExt for O {
     //    unsafe { TODO: call ffi:gtk_tree_store_set_valist() }
     //}
 
-    //fn set_valuesv(&self, iter: &TreeIter, columns: &[i32], values: &[&glib::Value]) {
+    //fn set_valuesv(&self, iter: &TreeIter, columns: &[i32], values: &[glib::Value]) {
     //    unsafe { TODO: call ffi:gtk_tree_store_set_valuesv() }
     //}
 
